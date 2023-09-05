@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Fund Me App</title>
+  <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: center;
+      padding: 8px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+  </style>
+  </head>
+
+  <body>
+    <button id="connectButton">Connect</button>
+    <button id="balanceButton">getBalance</button>
+    <button id="withdrawButton">Withdraw</button>
+    <button id="withdrawRewardsButton">Withdraw Rewards</button>
+    <!-- <form> -->
+    <label for="ethAmount">ETH Amount</label>
+    <input id="ethAmount" placeholder="0.1" type="number"/>
+    <button type="button" id="fundButton" > Fund </button>
+    <!-- </form> -->
+    <br/>
+    <hr/>
+    <!-- funders table -->
+    <table id="fundersTable">
+      <tr>
+        <th>Wallet Address</th>
+        <th>Fund amount</th>
+      </tr>
+      <tr id="fundersTable-tr">
+      </tr>
+    </table>
+    <!-- end of funders table -->
+  </body>
+
+  <script src="./index.js" type="module"></script>
+</html>
